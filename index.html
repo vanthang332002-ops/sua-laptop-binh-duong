@@ -59,17 +59,30 @@ height:90vh;
 background:url("baner.jpg");
 background-size:cover;
 background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
 }
 
 .hero-box{
 background:rgba(0,0,0,0.6);
 padding:40px;
 border-radius:10px;
+color:white;
 }
 
 .hero h1{
 font-size:45px;
 margin-bottom:10px;
+color:white;
+text-shadow:2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:20px;
 }
 
 .btn{
@@ -79,6 +92,7 @@ padding:14px 30px;
 border-radius:30px;
 text-decoration:none;
 font-weight:600;
+display:inline-block;
 }
 
 /* SECTION */
@@ -167,6 +181,44 @@ text-align:center;
 padding:40px;
 }
 
+/* IMAGE RESPONSIVE */
+
+img{
+max-width:100%;
+height:auto;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.hero{
+height:70vh;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero-box{
+padding:25px;
+}
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+nav a{
+margin:10px;
+}
+
+.section{
+padding:50px 20px;
+}
+
+}
+
 </style>
 
 </head>
@@ -194,8 +246,6 @@ padding:40px;
 <h1>Sửa Laptop Uy Tín Tại Thuận An</h1>
 
 <p>Chuyên sửa Dell • HP • Asus • Acer • Lenovo</p>
-
-<br>
 
 <a class="btn" href="tel:0333524029">📞 Gọi ngay 0333524029</a>
 
