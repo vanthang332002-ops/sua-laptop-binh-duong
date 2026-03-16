@@ -36,7 +36,7 @@ z-index:1000;
 }
 
 .logo{
-font-size:22px;
+font-size:24px;
 font-weight:700;
 color:#2563eb;
 }
@@ -55,40 +55,38 @@ color:#2563eb;
 /* HERO */
 
 .hero{
-height:85vh;
-background:linear-gradient(120deg,#2563eb,#0ea5e9);
-color:white;
+height:90vh;
+background:url("https://images.unsplash.com/photo-1587202372775-e229f172b9d7");
+background-size:cover;
+background-position:center;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-padding:20px;
+color:white;
+}
+
+.hero-box{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:10px;
 }
 
 .hero h1{
-font-size:50px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:20px;
-margin-bottom:30px;
+font-size:45px;
+margin-bottom:10px;
 }
 
 .btn{
-background:white;
-color:#2563eb;
+background:#2563eb;
+color:white;
 padding:14px 30px;
 border-radius:30px;
 text-decoration:none;
 font-weight:600;
 }
 
-.btn:hover{
-background:#e2e8f0;
-}
-
-/* SERVICES */
+/* SECTION */
 
 .section{
 padding:80px 8%;
@@ -96,7 +94,7 @@ text-align:center;
 }
 
 .section h2{
-font-size:36px;
+font-size:35px;
 margin-bottom:40px;
 }
 
@@ -115,7 +113,7 @@ transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-8px);
 }
 
 /* PROCESS */
@@ -124,11 +122,7 @@ transform:translateY(-10px);
 background:#eef2ff;
 }
 
-.step{
-padding:25px;
-}
-
-/* REVIEWS */
+/* REVIEW */
 
 .review{
 font-style:italic;
@@ -143,21 +137,18 @@ border:none;
 border-radius:10px;
 }
 
-/* CONTACT BUTTONS */
+/* FLOAT BUTTON */
 
 .floating{
-
 position:fixed;
 right:20px;
 bottom:20px;
 display:flex;
 flex-direction:column;
 gap:10px;
-
 }
 
 .floating a{
-
 width:55px;
 height:55px;
 border-radius:50%;
@@ -167,7 +158,6 @@ justify-content:center;
 color:white;
 font-size:22px;
 text-decoration:none;
-
 }
 
 .call{background:#22c55e;}
@@ -180,25 +170,23 @@ background:#0f172a;
 color:white;
 text-align:center;
 padding:40px;
-margin-top:60px;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
 
-<div class="logo">Laptop Repair Bình Dương</div>
+<div class="logo">Laptop Repair BD</div>
 
 <nav>
-
 <a href="#">Trang Chủ</a>
 <a href="#services">Dịch Vụ</a>
 <a href="#process">Quy Trình</a>
 <a href="#contact">Liên Hệ</a>
-
 </nav>
 
 </header>
@@ -206,11 +194,13 @@ margin-top:60px;
 
 <section class="hero">
 
-<div>
+<div class="hero-box">
 
 <h1>Sửa Laptop Uy Tín Tại Thuận An</h1>
 
-<p>Nhanh chóng • Giá tốt • Bảo hành dài</p>
+<p>Chuyên sửa Dell • HP • Asus • Acer • Lenovo</p>
+
+<br>
 
 <a class="btn" href="tel:0333524029">📞 Gọi ngay 0333524029</a>
 
@@ -218,6 +208,14 @@ margin-top:60px;
 
 </section>
 
+
+<section class="section">
+
+<h2>Giới Thiệu</h2>
+
+<p>Chúng tôi chuyên sửa chữa laptop tại Thuận An Bình Dương với đội ngũ kỹ thuật viên nhiều năm kinh nghiệm. Cam kết sửa nhanh, báo giá rõ ràng và bảo hành uy tín.</p>
+
+</section>
 
 
 <section class="section" id="services">
@@ -228,12 +226,12 @@ margin-top:60px;
 
 <div class="card">
 <h3>Thay Màn Hình</h3>
-<p>Thay màn hình laptop vỡ, sọc, tối.</p>
+<p>Sửa màn hình vỡ, sọc, tối.</p>
 </div>
 
 <div class="card">
 <h3>Thay Bàn Phím</h3>
-<p>Sửa bàn phím liệt hoặc hư.</p>
+<p>Bàn phím liệt, kẹt phím.</p>
 </div>
 
 <div class="card">
@@ -248,74 +246,56 @@ margin-top:60px;
 
 <div class="card">
 <h3>Sửa Mainboard</h3>
-<p>Sửa lỗi nguồn và chip.</p>
+<p>Sửa lỗi nguồn.</p>
 </div>
 
 <div class="card">
-<h3>Nâng cấp SSD / RAM</h3>
-<p>Tăng tốc laptop nhanh hơn.</p>
+<h3>Nâng Cấp SSD / RAM</h3>
+<p>Tăng tốc laptop.</p>
 </div>
 
 </div>
 
 </section>
-
 
 
 <section class="section process" id="process">
 
-<h2>Quy Trình Sửa Laptop</h2>
+<h2>Quy Trình Sửa Chữa</h2>
 
 <div class="grid">
 
-<div class="step card">
-<h3>1. Kiểm Tra</h3>
-<p>Kiểm tra lỗi laptop miễn phí.</p>
-</div>
-
-<div class="step card">
-<h3>2. Báo Giá</h3>
-<p>Báo giá rõ ràng trước khi sửa.</p>
-</div>
-
-<div class="step card">
-<h3>3. Sửa Chữa</h3>
-<p>Kỹ thuật viên tiến hành sửa.</p>
-</div>
-
-<div class="step card">
-<h3>4. Bàn Giao</h3>
-<p>Kiểm tra và bàn giao cho khách.</p>
-</div>
+<div class="card">1️⃣ Kiểm tra lỗi miễn phí</div>
+<div class="card">2️⃣ Báo giá rõ ràng</div>
+<div class="card">3️⃣ Tiến hành sửa</div>
+<div class="card">4️⃣ Bàn giao & bảo hành</div>
 
 </div>
 
 </section>
-
 
 
 <section class="section">
 
-<h2>Khách Hàng Nói Gì</h2>
+<h2>Khách Hàng Đánh Giá</h2>
 
 <div class="grid">
 
 <div class="card review">
-"Sửa nhanh và rất uy tín!"
+"Sửa nhanh, giá hợp lý. Rất hài lòng!"
 </div>
 
 <div class="card review">
-"Giá rẻ hơn nhiều nơi khác."
+"Thợ nhiệt tình và chuyên nghiệp."
 </div>
 
 <div class="card review">
-"Nhân viên nhiệt tình."
+"Laptop chạy mượt sau khi nâng cấp SSD."
 </div>
 
 </div>
 
 </section>
-
 
 
 <section class="section" id="contact">
@@ -339,11 +319,9 @@ margin-top:60px;
 
 <h3>Sửa Laptop Bình Dương</h3>
 
-<p>D19 Làng Chuyên Gia Oasis, Thuận An</p>
-
 <p>Hotline: 0333524029</p>
 
-<p>© 2026 All Rights Reserved</p>
+<p>© 2026</p>
 
 </footer>
 
